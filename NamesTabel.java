@@ -1,3 +1,5 @@
+// Zadanie. Podajesz ilość osób na Twojej liście, następnie podajesz kolejne imiona, wyniku otrzymujesz tabele z imionami z dużej litery)
+
 import java.util.Scanner;
 
 public class NamesTabel {
