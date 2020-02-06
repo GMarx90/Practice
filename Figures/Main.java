@@ -11,13 +11,13 @@ public class Main {
         Figure[] figures = new Figure[3];
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Podaj promieñ");
+        System.out.println("Podaj promien");
         figures[0] = new Circle(scanner.nextDouble());
 
-        System.out.println("Podaj 2 boki trójk¹ta");
+        System.out.println("Podaj 2 boki trojkata");
         figures[1] = new Triangle(scanner.nextDouble(), scanner.nextDouble());
 
-        System.out.println("Podaj 2 boki prostok¹ta");
+        System.out.println("Podaj 2 boki prostokata");
         figures[2] = new Rectangle(scanner.nextDouble(), scanner.nextDouble());
 
         for (Figure figure : figures) {
