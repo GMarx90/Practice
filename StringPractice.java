@@ -1,10 +1,25 @@
+/*Given a string, take the last char and return a new string with the last char added at the front and back, so "cat" yields "tcatt". The original string will be length 1 or more.
+
+
+backAround("cat") â€º "tcatt"
+backAround("Hello") â€º "oHelloo"
+backAround("a") â€º "aaa"*/
+
+
+public String backAround(String str) {
+  int i=str.length();
+  
+  return(str.charAt(i-1)+str+str.charAt(i-1));
+}
+
+
 /*
 Given a string, return true if the string starts with "hi" and false otherwise.
 
 
-startHi("hi there") › true
-startHi("hi") › true
-startHi("hello hi") › false*/
+startHi("hi there") â€º true
+startHi("hi") â€º true
+startHi("hello hi") â€º false*/
 
 public boolean startHi(String str) {
   
@@ -29,9 +44,9 @@ else {
 Given a string, if the string "del" appears starting at index 1, return a string where that "del" has been deleted. Otherwise, return the string unchanged.
 
 
-delDel("adelbc") › "abc"
-delDel("adelHello") › "aHello"
-delDel("adedbc") › "adedbc"*/
+delDel("adelbc") â€º "abc"
+delDel("adelHello") â€º "aHello"
+delDel("adedbc") â€º "adedbc"*/
 
 public String delDel(String str) {
   int a= str.length();
@@ -47,9 +62,9 @@ public String delDel(String str) {
 Return true if the given string begins with "mix", except the 'm' can be anything, so "pix", "9ix" .. all count.
 
 
-mixStart("mix snacks") › true
-mixStart("pix snacks") › true
-mixStart("piz snacks") › false*/
+mixStart("mix snacks") â€º true
+mixStart("pix snacks") â€º true
+mixStart("piz snacks") â€º false*/
 
 
 public boolean mixStart(String str) {
@@ -66,9 +81,9 @@ public boolean mixStart(String str) {
 Given a string, return a new string made of 3 copies of the last 2 chars of the original string. The string length will be at least 2.
 
 
-extraEnd("Hello") › "lololo"
-extraEnd("ab") › "ababab"
-extraEnd("Hi") › "HiHiHi"*/
+extraEnd("Hello") â€º "lololo"
+extraEnd("ab") â€º "ababab"
+extraEnd("Hi") â€º "HiHiHi"*/
 
 public String extraEnd(String str) {
  int a =str.length();
